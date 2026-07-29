@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>大成さん シンアカウント 運用状況ダッシュボード</title>
+<style>
+ :root{--bg:#f4f6fb;--card:#fff;--ink:#0f172a;--muted:#64748b;--line:#e5e9f2;--up:#16a34a;--down:#dc2626;}
+ *{box-sizing:border-box} body{margin:0;font-family:-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+ .wrap{max-width:960px;margin:0 auto;padding:28px 20px 64px}
+ header.top{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:16px;margin-bottom:8px}
+ .title{font-size:24px;font-weight:800;letter-spacing:.02em}
+ .subtitle{color:var(--muted);font-size:13px;margin-top:2px}
+ .period{text-align:right;font-size:13px;color:var(--muted)}
+ .period strong{display:block;font-size:16px;color:var(--ink)}
+ .demo-banner{background:#fef3c7;border:1px solid #fcd34d;color:#92400e;padding:10px 14px;border-radius:8px;font-size:13px;margin:16px 0}
+ h2{font-size:15px;font-weight:700;margin:32px 0 12px;display:flex;align-items:center;gap:8px}
+ h2::before{content:"";width:4px;height:16px;background:var(--ink);border-radius:2px}
+ .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+ @media(max-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+ .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+ .card-top{display:flex;align-items:center;gap:7px} .dot{width:8px;height:8px;border-radius:50%}
+ .card-title{font-size:12.5px;color:var(--muted);font-weight:600}
+ .card-val{font-size:30px;font-weight:800;margin-top:6px;letter-spacing:-.01em}
+ .card-sub{font-size:11.5px;color:var(--muted);margin-bottom:8px}
+ .delta{font-size:12.5px;font-weight:700} .delta em{font-style:normal;font-weight:600;opacity:.85}
+ .delta.up{color:var(--up)} .delta.down{color:var(--down)} .delta.neutral{color:var(--muted)}
+ .panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+ .chart{width:100%;height:auto}
+ .chart .grid{stroke:var(--line);stroke-width:1} .axis-y{fill:var(--muted);font-size:11px;text-anchor:end}
+ .axis-x{fill:var(--muted);font-size:11px;text-anchor:middle}
+ .two{display:grid;grid-template-columns:1fr 1fr;gap:14px} @media(max-width:640px){.two{grid-template-columns:1fr}}
+ table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+ th,td{padding:12px 14px;text-align:left;font-size:13px;border-bottom:1px solid var(--line);vertical-align:top}
+ th{background:#f8fafc;font-size:11.5px;color:var(--muted);font-weight:700;letter-spacing:.03em}
+ th.num,td.num{text-align:right;white-space:nowrap} tr:last-child td{border-bottom:none}
+ .rank{font-weight:800;color:var(--muted);width:28px} .ptext{max-width:440px}
+ .pmeta{font-size:11px;color:var(--muted);margin-top:4px} .pmeta a{color:#2563eb;text-decoration:none}
+ .empty{color:var(--muted);text-align:center;padding:20px} .muted{color:var(--muted)}
+ .notebox{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;font-size:13.5px}
+ footer{margin-top:40px;text-align:center;color:var(--muted);font-size:11.5px}
+</style></head>
+<body><div class="wrap">
+ <header class="top">
+   <div>
+     <div class="title">大成さん シンアカウント</div>
+     <div class="subtitle">Threads 運用状況レポート ・ @shin_ai_zidouka01</div>
+   </div>
+   <div class="period"><span>対象期間</span><strong>2026-07-20 〜 2026-07-26</strong></div>
+ </header>
+ 
+
+ <h2>対象週のサマリー</h2>
+ <div class="grid"><div class="card">
+          <div class="card-top"><span class="dot" style="background:#7c3aed"></span><span class="card-title">フォロワー数</span></div>
+          <div class="card-val">426</div>
+          <div class="card-sub">累計</div>
+        </div><div class="card">
+          <div class="card-top"><span class="dot" style="background:#2563eb"></span><span class="card-title">週間閲覧数</span></div>
+          <div class="card-val">45,641</div>
+          <div class="card-sub">週合計</div>
+        </div><div class="card">
+          <div class="card-top"><span class="dot" style="background:#0ea5e9"></span><span class="card-title">週間いいね</span></div>
+          <div class="card-val">36</div>
+          <div class="card-sub">週合計</div>
+        </div><div class="card">
+          <div class="card-top"><span class="dot" style="background:#db2777"></span><span class="card-title">エンゲージメント計</span></div>
+          <div class="card-val">38</div>
+          <div class="card-sub">いいね+RP+引用</div>
+        </div><div class="card">
+          <div class="card-top"><span class="dot" style="background:#ea580c"></span><span class="card-title">週間投稿本数</span></div>
+          <div class="card-val">27</div>
+          <div class="card-sub">本</div>
+        </div></div>
+
+ <h2>推移</h2>
+ <div class="two">
+   <div class="panel"><div class="card-title" style="margin-bottom:8px">フォロワー数の推移（日次・2026-05-16起点）</div><svg viewBox="0 0 680 220" class="chart" preserveAspectRatio="xMidYMid meet">
+      <defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.22"/>
+        <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/></linearGradient></defs>
+      <line x1="48" y1="16.0" x2="664" y2="16.0" class="grid"/><text x="40" y="20.0" class="axis-y">500</text><line x1="48" y1="58.5" x2="664" y2="58.5" class="grid"/><text x="40" y="62.5" class="axis-y">375</text><line x1="48" y1="101.0" x2="664" y2="101.0" class="grid"/><text x="40" y="105.0" class="axis-y">250</text><line x1="48" y1="143.5" x2="664" y2="143.5" class="grid"/><text x="40" y="147.5" class="axis-y">125</text><line x1="48" y1="186.0" x2="664" y2="186.0" class="grid"/><text x="40" y="190.0" class="axis-y">0</text>
+      <polygon points="48,186 48.0,186.0 56.3,186.0 64.6,186.0 73.0,186.0 81.3,185.7 89.6,185.0 97.9,184.3 106.3,183.6 114.6,182.6 122.9,181.6 131.2,181.6 139.6,179.5 147.9,178.5 156.2,178.5 164.5,177.5 172.9,176.1 181.2,174.1 189.5,173.1 197.8,171.7 206.2,166.6 214.5,165.3 222.8,163.6 231.1,161.9 239.5,161.9 247.8,160.5 256.1,159.1 264.4,157.4 272.8,156.1 281.1,154.0 289.4,152.7 297.7,150.6 306.1,148.6 314.4,142.1 322.7,140.8 331.0,139.1 339.4,134.7 347.7,130.9 356.0,125.1 364.3,123.4 372.6,121.7 381.0,119.7 389.3,117.7 397.6,117.7 405.9,115.3 414.3,107.5 422.6,101.7 430.9,99.3 439.2,96.9 447.6,94.2 455.9,92.5 464.2,92.5 472.5,89.8 480.9,83.0 489.2,81.3 497.5,79.2 505.8,76.5 514.2,73.8 522.5,71.4 530.8,68.7 539.1,68.7 547.5,66.0 555.8,63.6 564.1,61.6 572.4,59.9 580.8,58.2 589.1,56.1 597.4,54.1 605.7,52.4 614.1,50.7 622.4,48.6 630.7,46.6 639.0,44.9 647.4,43.2 655.7,41.2 664.0,41.2 664.0,186" fill="url(#lg)"/>
+      <polyline points="48.0,186.0 56.3,186.0 64.6,186.0 73.0,186.0 81.3,185.7 89.6,185.0 97.9,184.3 106.3,183.6 114.6,182.6 122.9,181.6 131.2,181.6 139.6,179.5 147.9,178.5 156.2,178.5 164.5,177.5 172.9,176.1 181.2,174.1 189.5,173.1 197.8,171.7 206.2,166.6 214.5,165.3 222.8,163.6 231.1,161.9 239.5,161.9 247.8,160.5 256.1,159.1 264.4,157.4 272.8,156.1 281.1,154.0 289.4,152.7 297.7,150.6 306.1,148.6 314.4,142.1 322.7,140.8 331.0,139.1 339.4,134.7 347.7,130.9 356.0,125.1 364.3,123.4 372.6,121.7 381.0,119.7 389.3,117.7 397.6,117.7 405.9,115.3 414.3,107.5 422.6,101.7 430.9,99.3 439.2,96.9 447.6,94.2 455.9,92.5 464.2,92.5 472.5,89.8 480.9,83.0 489.2,81.3 497.5,79.2 505.8,76.5 514.2,73.8 522.5,71.4 530.8,68.7 539.1,68.7 547.5,66.0 555.8,63.6 564.1,61.6 572.4,59.9 580.8,58.2 589.1,56.1 597.4,54.1 605.7,52.4 614.1,50.7 622.4,48.6 630.7,46.6 639.0,44.9 647.4,43.2 655.7,41.2 664.0,41.2" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linejoin="round"/>
+      <text x="48.0" y="208" class="axis-x">05-16</text><text x="122.9" y="208" class="axis-x">05-25</text><text x="197.8" y="208" class="axis-x">06-03</text><text x="272.8" y="208" class="axis-x">06-12</text><text x="347.7" y="208" class="axis-x">06-21</text><text x="422.6" y="208" class="axis-x">06-30</text><text x="497.5" y="208" class="axis-x">07-09</text><text x="572.4" y="208" class="axis-x">07-18</text><text x="647.4" y="208" class="axis-x">07-27</text>
+    </svg></div>
+   <div class="panel"><div class="card-title" style="margin-bottom:8px">週次の閲覧数</div><svg viewBox="0 0 680 220" class="chart" preserveAspectRatio="xMidYMid meet">
+      <line x1="48" y1="16.0" x2="664" y2="16.0" class="grid"/><text x="40" y="20.0" class="axis-y">200,000</text><line x1="48" y1="58.5" x2="664" y2="58.5" class="grid"/><text x="40" y="62.5" class="axis-y">150,000</text><line x1="48" y1="101.0" x2="664" y2="101.0" class="grid"/><text x="40" y="105.0" class="axis-y">100,000</text><line x1="48" y1="143.5" x2="664" y2="143.5" class="grid"/><text x="40" y="147.5" class="axis-y">50,000</text><line x1="48" y1="186.0" x2="664" y2="186.0" class="grid"/><text x="40" y="190.0" class="axis-y">0</text><rect x="63.5" y="152.1" width="46.0" height="33.9" rx="3" fill="#2563eb"/><rect x="140.5" y="49.3" width="46.0" height="136.7" rx="3" fill="#2563eb"/><rect x="217.5" y="134.8" width="46.0" height="51.2" rx="3" fill="#2563eb"/><rect x="294.5" y="125.5" width="46.0" height="60.5" rx="3" fill="#2563eb"/><rect x="371.5" y="139.3" width="46.0" height="46.7" rx="3" fill="#2563eb"/><rect x="448.5" y="141.0" width="46.0" height="45.0" rx="3" fill="#2563eb"/><rect x="525.5" y="84.4" width="46.0" height="101.6" rx="3" fill="#2563eb"/><rect x="602.5" y="147.2" width="46.0" height="38.8" rx="3" fill="#2563eb"/><text x="86.5" y="208" class="axis-x">06-07</text><text x="163.5" y="208" class="axis-x">06-14</text><text x="240.5" y="208" class="axis-x">06-21</text><text x="317.5" y="208" class="axis-x">06-28</text><text x="394.5" y="208" class="axis-x">07-05</text><text x="471.5" y="208" class="axis-x">07-12</text><text x="548.5" y="208" class="axis-x">07-19</text><text x="625.5" y="208" class="axis-x">07-26</text>
+    </svg></div>
+ </div>
+ <div class="panel" style="margin-top:14px"><div class="card-title" style="margin-bottom:8px">週次エンゲージメント（いいね＋返信＋リポスト＋引用）</div><svg viewBox="0 0 680 220" class="chart" preserveAspectRatio="xMidYMid meet">
+      <line x1="48" y1="16.0" x2="664" y2="16.0" class="grid"/><text x="40" y="20.0" class="axis-y">500</text><line x1="48" y1="58.5" x2="664" y2="58.5" class="grid"/><text x="40" y="62.5" class="axis-y">375</text><line x1="48" y1="101.0" x2="664" y2="101.0" class="grid"/><text x="40" y="105.0" class="axis-y">250</text><line x1="48" y1="143.5" x2="664" y2="143.5" class="grid"/><text x="40" y="147.5" class="axis-y">125</text><line x1="48" y1="186.0" x2="664" y2="186.0" class="grid"/><text x="40" y="190.0" class="axis-y">0</text><rect x="63.5" y="165.3" width="46.0" height="20.7" rx="3" fill="#db2777"/><rect x="140.5" y="130.2" width="46.0" height="55.8" rx="3" fill="#db2777"/><rect x="217.5" y="157.1" width="46.0" height="28.9" rx="3" fill="#db2777"/><rect x="294.5" y="174.4" width="46.0" height="11.6" rx="3" fill="#db2777"/><rect x="371.5" y="168.3" width="46.0" height="17.7" rx="3" fill="#db2777"/><rect x="448.5" y="139.8" width="46.0" height="46.2" rx="3" fill="#db2777"/><rect x="525.5" y="43.9" width="46.0" height="142.1" rx="3" fill="#db2777"/><rect x="602.5" y="173.1" width="46.0" height="12.9" rx="3" fill="#db2777"/><text x="86.5" y="208" class="axis-x">06-07</text><text x="163.5" y="208" class="axis-x">06-14</text><text x="240.5" y="208" class="axis-x">06-21</text><text x="317.5" y="208" class="axis-x">06-28</text><text x="394.5" y="208" class="axis-x">07-05</text><text x="471.5" y="208" class="axis-x">07-12</text><text x="548.5" y="208" class="axis-x">07-19</text><text x="625.5" y="208" class="axis-x">07-26</text>
+    </svg></div>
+
+ <h2>この週の伸びた投稿 TOP3</h2>
+ <table>
+   <thead><tr><th class="rank">#</th><th>投稿</th><th class="num">閲覧</th><th class="num">いいね</th></tr></thead>
+   <tbody><tr>
+          <td class="rank">1</td>
+          <td class="ptext">袋叩き覚悟で言うけど、ChatGPT・Claude・Copilotに「〇〇して」って投げてる人、AI弱者です。たった一言添えるだけで「敏腕マ…<div class="pmeta">2026-07-20 &nbsp;<a href="https://www.threads.com/@shin_ai_zidouka01/post/DbA1-HliTo5" target="_blank" rel="noopener">投稿を開く ↗</a></div></td>
+          <td class="num">17,997</td>
+          <td class="num">9</td>
+        </tr><tr>
+          <td class="rank">2</td>
+          <td class="ptext">『あなたはプロの編集者です』ってプロンプトの頭に律儀に書いてる人、それ今のAIにはもう効かないよ。少し前は役割を演じさせたり「チップを払う」…<div class="pmeta">2026-07-25 &nbsp;<a href="https://www.threads.com/@shin_ai_zidouka01/post/DbNLWIslSiH" target="_blank" rel="noopener">投稿を開く ↗</a></div></td>
+          <td class="num">5,615</td>
+          <td class="num">4</td>
+        </tr><tr>
+          <td class="rank">3</td>
+          <td class="ptext">Geminiに『◯◯を調べて』としか打ってない人、力の1割も使えてないよ。同じGeminiでも、聞き方を変えるだけで精度がびっくりするくらい…<div class="pmeta">2026-07-23 &nbsp;<a href="https://www.threads.com/@shin_ai_zidouka01/post/DbIXX6yoK96" target="_blank" rel="noopener">投稿を開く ↗</a></div></td>
+          <td class="num">4,289</td>
+          <td class="num">2</td>
+        </tr></tbody>
+ </table>
+
+ <h2>運用メモ・所感</h2>
+ <div class="notebox"><span class="muted">（運用メモは data/weekly.json の最新週の "note" に記入すると、ここに表示されます）</span></div>
+
+ <footer>生成日時: 2026-07-29 22:52 ／ Threads API 自動集計 ／ 株式会社ビルゲート</footer>
+</div></body></html>
